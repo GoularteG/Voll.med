@@ -1,24 +1,37 @@
-# Projeto de Cadastro de Pacientes e Médicos
+# API Rest para Gestão de Consultas - Voll.med
 
-Este projeto é uma aplicação Java desenvolvida utilizando Spring Boot, uma estrutura que simplifica o desenvolvimento de aplicativos Java. A aplicação oferece uma API RESTful para o cadastro, atualização, listagem e exclusão de pacientes e médicos.
-
-## Tecnologias Utilizadas
-
-- **Spring Boot**: Utilizado como o framework principal para o desenvolvimento da aplicação.
-- **MySQL**: Banco de dados relacional utilizado para armazenar os dados de pacientes e médicos.
-- **Lombok**: Biblioteca Java que ajuda a reduzir o código boilerplate, automatizando a criação de getters, setters, construtores, etc.
-- **Flyway**: Utilizado para controle de versionamento e migração de banco de dados.
-- **Maven**: Ferramenta de gerenciamento de projetos utilizada para compilar e construir o projeto.
-- **Jakarta Validation**: Utilizado para validação de entrada de dados na API.
-
+Este projeto consiste em uma API Rest desenvolvida para a clínica médica fictícia Voll.med. A API oferece funcionalidades para o cadastro de médicos e pacientes, e também incluirá recursos para agendamento e cancelamento de consultas.
 
 ## Funcionalidades
 
-- **Cadastro de Pacientes**: Permite cadastrar novos pacientes na base de dados.
-- **Listagem de Pacientes**: Recupera uma lista paginada de pacientes cadastrados.
-- **Atualização de Pacientes**: Permite atualizar informações de pacientes existentes.
-- **Exclusão de Pacientes**: Remove um paciente da base de dados.
-- **Cadastro de Médicos**: Permite cadastrar novos médicos na base de dados.
-- **Listagem de Médicos**: Recupera uma lista paginada de médicos cadastrados.
-- **Atualização de Médicos**: Permite atualizar informações de médicos existentes.
-- **Exclusão de Médicos**: Remove um médico da base de dados.
+- **CRUD de Médicos**: Permite cadastrar, visualizar, atualizar e excluir médicos da base de dados.
+- **CRUD de Pacientes**: Permite cadastrar, visualizar, atualizar e excluir pacientes da base de dados.
+- **Agendamento de Consultas** (em breve): Recurso para agendar consultas entre médicos e pacientes.
+- **Cancelamento de Consultas** (em breve): Recurso para cancelar consultas previamente agendadas.
+
+## Layout
+
+O layout da aplicação mobile está disponível no [Figma](link_para_o_layout).
+
+## Documentação
+
+A documentação das funcionalidades da API pode ser acessada no [Trello](link_para_a_documentação).
+
+## Tecnologias Utilizadas
+
+- **Java 17**: Linguagem de programação utilizada para desenvolver a aplicação.
+- **Spring Boot 3**: Framework utilizado para criar aplicativos Java.
+- **Maven**: Ferramenta de gerenciamento de dependências e construção de projetos.
+- **MySQL**: Banco de dados relacional utilizado para armazenar os dados da aplicação.
+- **Hibernate**: Framework de mapeamento objeto-relacional para o gerenciamento de dados.
+- **Flyway**: Utilizado para controle de versionamento e migração de banco de dados.
+- **Lombok**: Biblioteca Java que reduz a verbosidade do código.
+
+## Licença
+
+Este projeto foi desenvolvido por Gustavo Goularte utilizando os cursos de Spring Boot da Plataforma Alura, com instrução de Rodrigo Ferreira.
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
