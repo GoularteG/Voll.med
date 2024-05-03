@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import med.voll.api.endereco.Endereco;
+import med.voll.api.medico.DadosAtualizacaoMedicio;
 
 @Table(name = "pacientes")
 @Entity(name = "Paciente")
@@ -24,7 +25,7 @@ public class Paciente {
     private String cpf;
     @Embedded
     private Endereco endereco;
-
+    private boolean ativo;
     public Paciente(DadosCadastroPaciente dados){
         this.nome= dados.nome();
         this.email= dados.email();
@@ -34,5 +35,19 @@ public class Paciente {
     }
 
 
+    public void atualizarInformacoes(DadosAtualizacaoMedicio dados) {
+        if (dados.nome() != null){
+            this.nome= dados.nome();
+        }
+        if (dados.telefone() != null){
+            this.telefone= dados.telefone();
+        }
+        if (dados.endereco() != null){
+            this.endereco.atualizarInformacoes(dados.endereco());
+        }
+    }
 
+    public void excluir() {
+        this.ativo=false;
+    }
 }
