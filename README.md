@@ -11,11 +11,11 @@ Este projeto consiste em uma API Rest desenvolvida para a clínica médica fict�
 
 ## 🎨 Layout
 
-O layout da aplicação mobile está disponível no [Figma]([link_para_o_layout](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med?type=design&node-id=2-1007&mode=design)).
+O layout da aplicação mobile está disponível no Figma: https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med?type=design&node-id=2-1007&mode=design.
 
 ## 📃 Documentação
 
-A documentação das funcionalidades da API pode ser acessada no [Trello]([link_para_a_documentação](https://trello.com/b/O0lGCsKb/api-voll-med)).
+A documentação das funcionalidades da API pode ser acessada no  Trello: https://trello.com/b/O0lGCsKb/api-voll-med.
 
 ## 📃 Tecnologias Utilizadas
 
