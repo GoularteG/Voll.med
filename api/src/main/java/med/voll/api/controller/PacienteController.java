@@ -3,9 +3,11 @@ package med.voll.api.controller;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import med.voll.api.medico.DadosAtualizacaoMedicio;
-import med.voll.api.medico.DadosListagemMedicos;
-import med.voll.api.paciente.*;
+import med.voll.api.domain.medico.DadosAtualizacaoMedico;
+import med.voll.api.domain.paciente.DadosListagemPacientes;
+import med.voll.api.domain.paciente.Paciente;
+import med.voll.api.domain.paciente.PacienteRepository;
+import med.voll.api.domain.paciente.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -30,6 +32,7 @@ public class PacienteController {
         var uri = uriComponentsBuilder.path("/pacientes/{id}").buildAndExpand(paciente.getId()).toUri();
 
         return ResponseEntity.created(uri).body(new DadosDetalhamentoPaciente(paciente));
+
     }
 
     @GetMapping
@@ -41,7 +44,7 @@ public class PacienteController {
 
     @PutMapping
     @Transactional
-    public ResponseEntity atualizar(@RequestBody @Valid DadosAtualizacaoMedicio dados) {
+    public ResponseEntity atualizar(@RequestBody @Valid DadosAtualizacaoMedico dados) {
         var paciente = repository.getReferenceById(dados.id());
         paciente.atualizarInformacoes(dados);
 
