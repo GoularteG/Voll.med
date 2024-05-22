@@ -13,10 +13,6 @@ Este projeto consiste em uma API Rest desenvolvida para a clínica médica fict�
 
 O layout da aplicação mobile está disponível no Figma: https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med?type=design&node-id=2-1007&mode=design.
 
-## 📃 Documentação
-
-A documentação das funcionalidades da API pode ser acessada no  Trello: https://trello.com/b/O0lGCsKb/api-voll-med.
-
 ## 📃 Tecnologias Utilizadas
 
 - **Java 17**: Linguagem de programação utilizada para desenvolver a aplicação.
@@ -26,6 +22,8 @@ A documentação das funcionalidades da API pode ser acessada no  Trello: https:
 - **Hibernate**: Framework de mapeamento objeto-relacional para o gerenciamento de dados.
 - **Flyway**: Utilizado para controle de versionamento e migração de banco de dados.
 - **Lombok**: Biblioteca Java que reduz a verbosidade do código.
+- **Spring Security**: Utilizado para segurança com Token JWT e filtro Spring.
+- **Insomnia**: Ferramenta utilizada para testar as requisições da API.
 
 ## 📃 Licença
 
