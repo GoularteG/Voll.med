@@ -25,11 +25,5 @@ O layout da aplicação mobile está disponível no Figma: https://www.figma.com
 - **Spring Security**: Utilizado para segurança com Token JWT e filtro Spring.
 - **Insomnia**: Ferramenta utilizada para testar as requisições da API.
 
-## 📃 Licença
 
-Este projeto foi desenvolvido por Gustavo Goularte utilizando os cursos de Spring Boot da Plataforma Alura, com instrução de Rodrigo Ferreira.
-
-## 📃 Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
